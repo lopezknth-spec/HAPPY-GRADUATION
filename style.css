@@ -109,3 +109,26 @@ h1 {
   from { transform: translateY(0); opacity: 1; }
   to { transform: translateY(-100vh); opacity: 0; }
 }
+
+.slideshow img {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.slideshow img.show {
+  opacity: 1;
+}
+
+.next-btn {
+  position: fixed;
+  bottom: 40px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #6a5acd;
+  color: white;
+}
+
