@@ -33,12 +33,12 @@ body {
 
 /* Envelope */
 .envelope {
-  width: 380px;
-  height: 240px;
+  width: 460px;        /* BIGGER */
+  height: 300px;       /* TALLER */
   background: white;
   position: relative;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 35px 70px rgba(0,0,0,0.4);
   overflow: hidden;
 }
 
@@ -62,9 +62,9 @@ body {
   width: 100%;
   height: 100%;
   background: white;
-  padding: 30px;
+  padding: 40px;       /* MORE SPACE FOR TEXT */
   box-sizing: border-box;
-  transition: bottom 1.8s ease, opacity 2s ease;
+  transition: bottom 2.5s ease, opacity 2.5s ease;
   z-index: 2;
 }
 
@@ -130,5 +130,17 @@ h1 {
   border: none;
   background: #6a5acd;
   color: white;
+}
+
+.letter p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
