@@ -20,12 +20,14 @@ function openEnvelope() {
   document.getElementById("envelope").classList.add("open");
   document.querySelector(".open-btn").style.display = "none";
 
-  // After letter moment → fade out → next scene
+  // ✨ LET HER READ (10 seconds)
   setTimeout(() => {
     document.getElementById("letter").classList.add("fade-out");
-  }, 4500);
+  }, 10000); // 10 seconds
 
+  // 🎬 MOVE TO NEXT SCENE AFTER FADE
   setTimeout(() => {
     window.location.href = "slideshow.html";
-  }, 6500);
+  }, 13000); // fade + transition time
 }
+
