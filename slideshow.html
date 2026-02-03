@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memories 🎓</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="slideshow">
+  <img src="images/photo1.jpg">
+  <img src="images/photo2.jpg">
+  <img src="images/photo3.jpg">
+</div>
+
+<button class="next-btn" onclick="goFinal()">
+  Continue ✨
+</button>
+
+<script>
+let slides = document.querySelectorAll(".slideshow img");
+let index = 0;
+
+slides[index].classList.add("show");
+
+setInterval(() => {
+  slides[index].classList.remove("show");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("show");
+}, 3500);
+
+function goFinal() {
+  window.location.href = "final.html";
+}
+</script>
+</body>
+</html>
